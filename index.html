@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ad Tag Testing Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Ad Tag Testing Tool</h1>
+
+<textarea id="adTag" placeholder="Paste Ad Tag Here"></textarea>
+
+<br><br>
+
+<button onclick="validateTag()">Validate Tag</button>
+<button onclick="previewAd()">Preview Ad</button>
+<button onclick="clearTag()">Clear</button>
+<h3>Status</h3>
+<p id="status"></p>
+
+<h3>Ad Preview</h3>
+
+<iframe id="adFrame" sandbox="allow-scripts allow-same-origin"></iframe>
+
+<h3>Performance</h3>
+<p id="loadTime"></p>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
